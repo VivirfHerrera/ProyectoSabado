@@ -31,6 +31,7 @@
             this.txtInformación = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtv = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtInformación
@@ -62,16 +63,27 @@
             this.txtv.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtv.Location = new System.Drawing.Point(173, 252);
             this.txtv.Name = "txtv";
-            this.txtv.Size = new System.Drawing.Size(225, 32);
+            this.txtv.Size = new System.Drawing.Size(225, 38);
             this.txtv.TabIndex = 3;
             this.txtv.Text = "Vivian Herrera";
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(173, 296);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(225, 38);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Jesus Rodriguez";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // AcercaDe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 549);
+            this.ClientSize = new System.Drawing.Size(806, 541);
             this.ControlBox = false;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtv);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtInformación);
@@ -91,5 +103,6 @@
         private System.Windows.Forms.TextBox txtInformación;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.TextBox txtv;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
